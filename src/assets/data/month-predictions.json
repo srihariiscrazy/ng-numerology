@@ -1,0 +1,191 @@
+{
+  "January": {
+    "planet": "Saturn",
+    "friendlyMonths": ["January", "April", "July", "October"],
+    "specialities": [
+      "Good Education.",
+      "They like Designing, Technical field, Chemicals, Doctor or Lab Technician.",
+      "Their residence will be near a pond or water source with good ventilation.",
+      "Spiritual family.",
+      "Possibility of spouse coming from Eastern direction from their native place.",
+      "Their spouse will rule the family.",
+      "Spouse also will be spiritually connected and respect their elders.",
+      "They have eyesight problem.",
+      "They work hard.",
+      "Late retirement with good bank balance."
+    ]
+  },
+  "February": {
+    "planet": "Saturn",
+    "friendlyMonths": ["February", "May", "August", "November"],
+    "specialities": [
+      "They change house frequently.",
+      "Family members will be soft, kind and loving.",
+      "They will be fast and well-developed.",
+      "They like to enjoy with family members.",
+      "Not very rich, but settled family.",
+      "Partner will be good-looking, hardworking, talkative, healthy and active.",
+      "Early job possible.",
+      "Travelling job, commission or postal."
+    ]
+  },
+  "March": {
+    "planet": "Jupiter",
+    "friendlyMonths": ["March", "June", "September", "December"],
+    "specialities": [
+      "There will be free space towards South side.",
+      "Any of family member’s death will be unnatural.",
+      "Very stubborn, rude and quarrelling.",
+      "There will be chance of Government service oriented job.",
+      "They like travelling or technical based job.",
+      "They earn income from rent or agriculture land.",
+      "Partner’s height will be short, good looking and intelligent.",
+      "Partner will suffer from nose, stomach related problem."
+    ]
+  },
+  "April": {
+    "planet": "Mars",
+    "friendlyMonths": ["April", "July", "October", "January"],
+    "specialities": [
+      "Good business skills, mathematician, lawyer, writer, editor they like to be in these professions.",
+      "They like Lord Vishnu.",
+      "House may be in rectangle shape.",
+      "Quarrelling, talkative and suspicious in nature.",
+      "They give importance to finance, but less helping nature.",
+      "They like luxury life and jewellery.",
+      "Partner will be intelligent.",
+      "They grow in life after their age of 26.",
+      "They plan to have secure life.",
+      "Men born in this month will listen to their wife, do what they say."
+    ]
+  },
+  "May": {
+    "planet": "Venus",
+    "friendlyMonths": ["May", "August", "November", "February"],
+    "specialities": [
+      "Their life will be systematic.",
+      "They have secure Job. Administrative field, Professional service.",
+      "They lead good life without any borrowings.",
+      "They live a satisfied life, and will manage with whatever they have.",
+      "Partner may have double chin, dimple in chin or gap between eyebrows.",
+      "Partner will be good-looking and good-mannered.",
+      "Enjoy good married life.",
+      "Growth after the age of 30.",
+      "Chance of having twin baby birth."
+    ]
+  },
+  "June": {
+    "planet": "Mercury",
+    "friendlyMonths": ["June", "September", "December", "March"],
+    "specialities": [
+      "Will have good business skill.",
+      "After their birth family member will have growth.",
+      "They like pink / blue color more.",
+      "They like profession like doctor, surgeons, singing, painting or financial dealer.",
+      "They maintain good bank balance.",
+      "Partner will be good looking. V shaped chin with smiley face.",
+      "Partner will be interested in singing and dancing."
+    ]
+  },
+  "July": {
+    "planet": "Moon",
+    "friendlyMonths": ["July", "October", "January", "April"],
+    "specialities": [
+      "Growth after their birth.",
+      "House will have less ventilation and without proper arrangement.",
+      "Don’t like spirituality, not interested in traditions.",
+      "They like technical based Education and Job.",
+      "Possibility of Love Marriage.",
+      "Partner may be childhood friend or known person.",
+      "They love working on machines.",
+      "They earn money and fame from other country.",
+      "Delay in child birth.",
+      "Healthy life and enjoys ancestral property."
+    ]
+  },
+  "August": {
+    "planet": "Sun",
+    "friendlyMonths": ["August", "November", "February", "May"],
+    "house_shape": "L",
+    "family": "Mother leads, father silent",
+    "career": "Hurdles, frequent job changes, works in vehicle/steel industries",
+    "develop_after_age": 35,
+    "marriage_notes": "Lot of troubles after marriage, starting 8 years they face struggles",
+    "specialities": [
+      "House will be in ‘L’ shape.",
+      "During the birth of this person family will face problem and difficulties.",
+      "Mother will lead the family; Father will be silent.",
+      "After hard work also no recognition, name.",
+      "They face lot of hurdles at Job.",
+      "They frequently change the job.",
+      "They work in Vehicle industry, coal, motor, hardware, steel, iron.",
+      "They develop after the age of 35.",
+      "Mother-in-law will be strong and Father-in-law will be silent.",
+      "Partner will be straightforward and systematic.",
+      "Lot of troubles after marriage, starting 8 years they face lot of struggles."
+    ]
+  },
+  "September": {
+    "planet": "Mercury",
+    "friendlyMonths": ["September", "December", "March", "June"],
+    "specialities": [
+      "Lot of differences between family members.",
+      "The head of the family will be more spiritual and dual mindset.",
+      "House may be in the end of the road or street.",
+      "They like professions like teaching, lecturers, any field in education.",
+      "No recognition for their hard work.",
+      "Partner will be dominating.",
+      "Partner will suffer lot of health issues.",
+      "Marriage life is not smooth. Lot of quarrels.",
+      "They like to keep people around them happy, but they fail in this."
+    ]
+  },
+  "October": {
+    "planet": "Venus",
+    "friendlyMonths": ["October", "January", "April", "July"],
+    "specialities": [
+      "Will have good education.",
+      "Interested in singing and dancing.",
+      "They will be in well-ventilated house.",
+      "Family member will have good name in society.",
+      "Partner will be from the family.",
+      "Partner will be spiritual and give respect to others (especially elders ).",
+      "They have eye sight issue.",
+      "Work hard and will retire late with good bank balance."
+    ]
+  },
+  "November": {
+    "planet": "Mars",
+    "friendlyMonths": ["November", "February", "May", "August"],
+    "specialities": [
+      "They change house frequently.",
+      "Family members will have helping nature, soft and tender.",
+      "They settle in life in early age.",
+      "They give good and memorable time to family.",
+      "Not so rich, but the money flow will be good and they get money whenever necessary.",
+      "Marriage will be at early age.",
+      "They like to grow trees in front of the house.",
+      "Partner will be good looking, active and healthy.",
+      "They like travel-based Job.",
+      "Don’t maintain good bank balance.",
+      "Possibility of job like travelling, postal, police or commission agents.",
+      "Partner will be hardworking, talkative, good looking.",
+      "Enjoys good marriage life."
+    ]
+  },
+  "December": {
+    "planet": "Jupiter",
+    "friendlyMonths": ["December", "March", "June", "September"],
+    "specialities": [
+      "House may have free space.",
+      "Family member will be stubborn.",
+      "Government related job, travelling job or service-oriented job.",
+      "At the age of 21 they will have stability in life.",
+      "Enjoys income from property, land or agricultural land.",
+      "Partner will be good looking and intelligent.",
+      "They love to travel a lot.",
+      "Child will shine very well in a foreign land.",
+      "Partner will face nasal and stomach problem."
+    ]
+  }
+}

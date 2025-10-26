@@ -1,0 +1,237 @@
+  <div class="container">
+    <h1 class="text-2xl font-bold mb-4">Numerology Calculator (Extended, external data)</h1>
+    <label class="block mb-1">Full Name:</label>
+    <input [(ngModel)]="name" class="border p-2 w-full mb-3 rounded" />
+
+    <label class="block mb-1">Date of Birth:</label>
+    <input type="date" [(ngModel)]="dob" class="border p-2 w-full mb-3 rounded" />
+
+    <label class="block mb-1">Plots (comma separated):</label>
+    <input [(ngModel)]="plots" class="border p-2 w-full mb-3 rounded" />
+
+    <label class="block mb-1">Door Number:</label>
+    <input [(ngModel)]="door" class="border p-2 w-full mb-3 rounded" />
+
+    <div class="flex gap-2">
+      <button (click)="calculate()" class="bg-blue-600 text-white px-4 py-2 rounded">Calculate</button>
+      <button (click)="exportPdf()" class="bg-green-600 text-white px-4 py-2 rounded">Export PDF</button>
+    </div>
+
+    <div *ngIf="result" class="mt-5 border p-3 rounded bg-white">
+      <h2 class="font-semibold mb-2">Results</h2>
+
+      <p><strong>Name:</strong> {{name}}</p>
+      <p><strong>DOB:</strong> {{dob}}</p>
+
+      <p><strong>Birth Number:</strong> {{result.birth}}</p>
+      <p *ngIf="birthCalc"><em>Calculation:</em> {{ birthCalc.steps.join(' → ') }} → {{ birthCalc.final }}</p>
+
+      <p><strong>Destiny Number:</strong> {{result.destiny}}</p>
+      <p *ngIf="destinyCalc"><em>Calculation:</em> {{ destinyCalc.steps.join(' → ') }} → {{ destinyCalc.final }}</p>
+
+      <p><strong>Ruling Planet:</strong> {{rulingPlanet[result.birth]}}</p>
+        
+      <p *ngIf="firstLetterKey"><strong>First letter (significance):</strong> {{ firstLetterKey }} - {{ firstLetterDesc }}</p>
+    
+      <p *ngIf="stabilityAgeForBirth"><strong>Stability Age:</strong> {{ stabilityAgeForBirth.join(', ') }}</p>
+
+      <h3 class="mt-3 font-semibold">Hora to be used</h3>
+      <div *ngIf="horaForBirth">
+        <p><strong>Ruling Number:</strong> {{ result.birth }}</p>
+        <p><strong>Auspicious Hora:</strong> {{ formatHoraList(horaForBirth.auspicious) }}</p>
+        <p><strong>Average Auspicious Hora:</strong> {{ formatHoraList(horaForBirth.average) }}</p>
+        <p><strong>In-Auspicious Hora:</strong> {{ formatHoraList(horaForBirth.inauspicious) }}</p>
+      </div>
+      <p *ngIf="!horaForBirth">No hora mapping available for ruling number {{ result.birth }}</p>
+
+      <h3 class="mt-3 font-semibold">Lo Shu Grid</h3>
+      <ng-container *ngIf="loShuResults.length>0">
+      <p *ngFor="let combination of loShuResults"><strong>{{combination.pair}}</strong> {{ combination.description }}</p>
+      </ng-container>
+      <ng-container *ngIf="loShuResults.length==0">
+      <p>No matching Combinations</p>
+      </ng-container>      
+
+
+
+
+      <!-- Converted Dharma / Artha / Kama to table output with repeated numbers -->
+      <h3 class="mt-3 font-semibold">Full Significance of Birth date</h3>
+      <table class="w-full text-left border-collapse">
+        <thead>
+          <tr class="border-b">
+            <th class="py-1">Numbers</th>
+            <th class="py-1">Type</th>
+            <th class="py-1">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of dakRows" class="border-b">
+            <!-- show formatted counts like "1*3 3*1 9*2"; fallback to previous number display -->
+            <td class="py-1">
+              <strong>
+                <span>{{ row.formatted }}</span>
+              </strong>
+            </td>
+           <td class="py-1">{{ row.type }}</td>
+            <td class="py-1">{{ row.desc }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 class="mt-3 font-semibold">Birth Year Cycle</h3>
+      <table class="table-auto w-full border-collapse mb-3">
+        <thead>
+          <tr>
+            <th class="border px-2 py-1 text-left w-40">Important Years</th>
+            <th class="border px-2 py-1 text-left">Calculation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <ng-container *ngIf="birthYearCycle?.cycles?.length">
+            <tr *ngFor="let c of birthYearCycle.cycles;let last = last" class="border-b">
+              <td class="border px-2 py-1">{{ c.from + ' ('+c.currentAge+')' }}</td>
+              <td class="border px-2 py-1">
+            {{ !last?c.calculation.steps.join(' → '):'' }}
+              </td>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+
+      <h3 class="mt-3 font-semibold">Number Vibration (detailed)</h3>
+      <table class="table-auto w-full border-collapse mb-3">
+        <tbody>
+          <tr *ngIf="!numberVibration[result.birth]">
+            <td class="border px-2 py-1" colspan="2">No vibration data for number {{ result.birth }} (check number-vibrations.json)</td>
+          </tr>
+          <ng-container *ngIf="numberVibration[result.birth]">
+            <tr class="border-b">
+              <td class="border px-2 py-1 align-top">Positive</td>
+              <td class="border px-2 py-1">
+                <ul class="list-disc pl-5 m-0">
+                  <li *ngFor="let p of numberVibration[result.birth]?.positive">{{ p }}</li>
+                </ul>
+              </td>
+            </tr>
+            <tr class="border-b">
+              <td class="border px-2 py-1 align-top">Negative</td>
+              <td class="border px-2 py-1">
+                <ul class="list-disc pl-5 m-0">
+                  <li *ngFor="let n of numberVibration[result.birth]?.negative">{{ n }}</li>
+                </ul>
+              </td>
+            </tr>
+            <tr class="border-b">
+              <td class="border px-2 py-1">Finance</td>
+              <td class="border px-2 py-1">{{ numberVibration[result.birth]?.finance }}</td>
+            </tr>
+            <tr class="border-b">
+              <td class="border px-2 py-1 align-top">Health</td>
+              <td class="border px-2 py-1">
+                <ul class="list-disc pl-5 m-0">
+                  <li *ngFor="let h of numberVibration[result.birth]?.health">{{ h }}</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="border px-2 py-1 align-top">Relationship</td>
+              <td class="border px-2 py-1">
+                <ul class="list-disc pl-5 m-0">
+                  <li *ngFor="let r of numberVibration[result.birth]?.relationship">{{ r }}</li>
+                </ul>
+              </td>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+
+      <h3 class="mt-3 font-semibold">Weekday Result</h3>
+      <p>{{weekdayText}}</p>
+
+      <h3 class="mt-3 font-semibold">Numerology & Health</h3>
+       <p><strong>Health Gunas:</strong> {{healthResult.healthGunas}}</p>
+       <p><strong>Humour:</strong> {{healthResult.humour}}</p>
+       <p><strong>Dosha:</strong> {{healthResult.dosha}}</p>
+       <p><strong>Diseases:</strong> {{healthResult.diseases}}</p>
+       <p><strong>Remedies:</strong> {{healthResult.remedy}}</p>
+              
+      <h3 class="mt-3 font-semibold">Matching Results</h3>
+       <p><strong>Number:</strong> {{birthCalc?.final}}</p>
+       <p><strong>Super Friendly:</strong> {{matchingResult.super_friendly}}</p>
+       <p><strong>Friendly:</strong> {{matchingResult.friendly}}</p>
+       <p><strong>Indifferent (Reverse):</strong> {{matchingResult.indifferent}}</p>
+       <p><strong>Unfriendly:</strong> {{matchingResult.unfriendly}}</p>
+       
+      <h3 class="mt-3 font-semibold">Wedding Results</h3>
+      <p><strong>Possible Years:</strong> {{weddingResult.matchingYears| json}}</p>
+      <p><strong>Late or troubled Marriage:</strong> {{weddingResult.lateOrTroubleInMarriage| json}}</p>
+      <p><strong>Compatible Partner Birth Month:</strong> {{compatilePartnerMonths}}</p>
+
+      <h3 class="mt-3 font-semibold">Month Predictions</h3>
+      <p><strong>Planet:</strong> {{monthResult.planet}}</p>
+      <p><strong>Friendly Planets:</strong> {{monthResult.friendlyMonths.join(', ')}}</p>
+      <p><strong>Speciality:</strong></p>
+        <ul class="list-disc pl-5">
+          <li *ngFor="let item of monthResult.specialities">{{ item }}</li>
+        </ul>
+
+      <h3 class="mt-3 font-semibold">Raashi Element</h3>
+      <p *ngIf="raashiElementKey"><strong>Element:</strong> {{ raashiElementKey | titlecase }}</p>
+      <p><strong>Strengths:</strong> {{ raashiElementDetails.character.strengths }}</p>
+      <p><strong>Weakness</strong> {{ raashiElementDetails.character.weaknesses }}</p>
+      <p><strong>Caution:</strong> {{ raashiElementDetails.character.cautions }}</p>
+
+      <h3 class="mt-3 font-semibold">Significance of Year of Birth</h3>
+      <div *ngIf="yearResult">
+        <ul class="list-disc pl-5">
+          <li *ngFor="let item of yearResult">{{ item }}</li>
+        </ul>
+      </div>
+      <p *ngIf="!yearResult">No year significance available.</p>
+
+       <h3 class="mt-3 font-semibold">Mind / Material (complete calculation)</h3>
+      <p *ngIf="result.mm">
+        Letters → mapped values: <br/>
+        Vowels: {{ result.mm.vowelMapping?.join(', ') || (result.mm.vowels?.join(', ') ) }} <br/>
+        Vowel sum: {{ result.mm.vowelSum }} → Mind: {{ result.mm.mind }} <br/>
+        Consonants: {{ result.mm.consMapping?.join(', ') || (result.mm.consonants?.join(', ') ) }} <br/>
+        Consonant sum: {{ result.mm.consSum }} → Material: {{ result.mm.material }} <br/>
+        Total: {{ result.mm.total }}
+      </p>
+
+      <div *ngIf="mindEntry || materialEntry" class="mt-3 border p-2 rounded bg-gray-50">
+        <h4 class="font-semibold">Mapped Mind / Material Details</h4>
+        <div *ngIf="mindEntry" class="mt-2">
+          <p><strong>Mind Number:</strong> {{ result.mm.mind }} <small class="text-sm">(Planet: {{ mindEntry.planet }})</small></p>
+          <p><strong>Qualities:</strong></p>
+          <ul class="list-disc pl-6">
+            <li *ngFor="let q of mindEntry.mind">{{ q }}</li>
+          </ul>
+          <p class="mt-1"><strong>Total:</strong> {{ mindEntry.total }}</p>
+        </div>
+
+        <div *ngIf="materialEntry" class="mt-3">
+          <p><strong>Material Number:</strong> {{ result.mm.material }} <small class="text-sm">(Planet: {{ materialEntry.planet }})</small></p>
+          <p><strong>Material Description:</strong> {{ materialEntry.material }}</p>
+          <p class="mt-1"><strong>Total:</strong> {{ materialEntry.total }}</p>
+        </div>
+      </div>
+
+      <h3 class="mt-3 font-semibold">Plots (complete calculation)</h3>
+      <ul>
+        <li *ngFor="let p of result.plotResults">
+          {{p.plot}} → digits: {{p.digits.join('+')}} = {{p.sum}} 
+          <span *ngIf="p.steps?.length">→ {{ p.steps.join(' → ') }} → {{p.reduced}}</span>
+          → {{p.text}}
+        </li>
+      </ul>
+
+      <h3 class="mt-3 font-semibold">Door (complete calculation)</h3>
+      <p>
+        digits: {{result.doorRes.digits.join('+')}} = {{result.doorRes.sum}}
+        <span *ngIf="result.doorRes.steps?.length"> → {{ result.doorRes.steps.join(' → ') }} → {{result.doorRes.reduced}}</span>
+        → {{result.doorRes.text}}
+      </p>
+    </div>
+  </div>

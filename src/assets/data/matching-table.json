@@ -1,0 +1,56 @@
+{
+  "1": {
+    "super_friendly": [],
+    "friendly": [2, 3, 6, 7, 9],
+    "indifferent": [1, 8],
+    "unfriendly": [4, 5]
+  },
+  "2": {
+    "super_friendly": [2, 6, 9],
+    "friendly": [1, 4, 7],
+    "indifferent": [3, 8],
+    "unfriendly": [5]
+  },
+  "3": {
+    "super_friendly": [6, 9],
+    "friendly": [1, 5],
+    "indifferent": [2, 4, 7],
+    "unfriendly": [3, 8]
+  },
+  "4": {
+    "super_friendly": [4, 6],
+    "friendly": [2, 7, 8, 9],
+    "indifferent": [3, 5],
+    "unfriendly": [1]
+  },
+  "5": {
+    "super_friendly": [],
+    "friendly": [3],
+    "indifferent": [4, 6, 7, 8, 9],
+    "unfriendly": [1, 2, 5]
+  },
+  "6": {
+    "super_friendly": [2, 3, 4, 6, 9],
+    "friendly": [1],
+    "indifferent": [5, 7, 8],
+    "unfriendly": []
+  },
+  "7": {
+    "super_friendly": [7, 9],
+    "friendly": [1, 2, 4, 6],
+    "indifferent": [3, 5, 8],
+    "unfriendly": []
+  },
+  "8": {
+    "super_friendly": [],
+    "friendly": [4, 6],
+    "indifferent": [1, 2, 5, 7, 8, 9],
+    "unfriendly": [3]
+  },
+  "9": {
+    "super_friendly": [2, 3, 6, 7, 9],
+    "friendly": [1, 4],
+    "indifferent": [5, 8],
+    "unfriendly": []
+  }
+}

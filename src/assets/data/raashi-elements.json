@@ -1,0 +1,137 @@
+{
+  "fire": {
+    "ranges": [
+      "21 March - 20 April",
+      "21 July - 20 August",
+      "21 November - 20 December"
+    ],
+    "character": {
+      "strengths": [
+        "Passionate",
+        "Expressive",
+        "Fun",
+        "Open",
+        "Charismatic",
+        "Bright",
+        "Daring",
+        "Decisive",
+        "Determined"
+      ],
+      "weaknesses": [
+        "Hot-headed",
+        "Obsessive",
+        "Unfaithful",
+        "Jealous",
+        "Easily irritated",
+        "Impatient",
+        "Impulsive"
+      ],
+      "cautions": [
+        "Fire",
+        "Electricity",
+        "Stove",
+        "Burning gas",
+        "Heat"
+      ]
+    }
+  },
+  "earth": {
+    "ranges": [
+      "21 April - 20 May",
+      "21 August - 20 September",
+      "21 December - 20 January"
+    ],
+    "character": {
+      "strengths": [
+        "Stable",
+        "Hard-working",
+        "Ambitious",
+        "Loyal",
+        "Creative",
+        "Nurturing",
+        "Logical",
+        "Empathetic",
+        "Practical",
+        "Organized"
+      ],
+      "weaknesses": [
+        "Judgemental",
+        "Controlling",
+        "Brutally honest",
+        "Overly cautious",
+        "Stubborn",
+        "Rigid"
+      ],
+      "cautions": [
+        "Scorpions",
+        "Snakes",
+        "Wild animals",
+        "Road accidents"
+      ]
+    }
+  },
+  "air": {
+    "ranges": [
+      "21 May - 20 June",
+      "21 September - 20 October",
+      "21 January - 20 February"
+    ],
+    "character": {
+      "strengths": [
+        "Thoughtful",
+        "Witty",
+        "Intellectual",
+        "Carefree",
+        "Quick thinker",
+        "Hard worker",
+        "Independent",
+        "Free spirited",
+        "Fun"
+      ],
+      "weaknesses": [
+        "Fickle",
+        "Inconsistent",
+        "Insensitive",
+        "Selfish"
+      ],
+      "cautions": [
+        "Falling from trees",
+        "Building falls",
+        "Slipping",
+        "Heights"
+      ]
+    }
+  },
+  "water": {
+    "ranges": [
+      "21 June - 20 July",
+      "21 October - 20 November",
+      "21 February - 20 March"
+    ],
+    "character": {
+      "strengths": [
+        "Creative",
+        "Empathetic",
+        "Caring",
+        "Devoted",
+        "Merciful",
+        "Trusting",
+        "Patient"
+      ],
+      "weaknesses": [
+        "Too sensitive",
+        "Unstable",
+        "Prone to depression",
+        "Irrational",
+        "Gullible"
+      ],
+      "cautions": [
+        "Swimming",
+        "Rivers",
+        "Tanks",
+        "Sea",
+        "Ocean"
+      ]
+    }
+  }
+}

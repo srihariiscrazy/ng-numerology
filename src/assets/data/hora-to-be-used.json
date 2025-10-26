@@ -1,0 +1,47 @@
+{
+  "1": {
+    "auspicious": ["Sun","Moon","Mars","Jupiter"],
+    "average": ["Mercury"],
+    "inauspicious": ["Venus","Saturn"]
+  },
+  "2": {
+    "auspicious": ["Sun","Mercury","Moon"],
+    "average": ["Mars","Jupiter","Venus","Saturn"],
+    "inauspicious": []
+  },
+  "3": {
+    "auspicious": ["Sun","Moon","Mars","Jupiter"],
+    "average": ["Saturn"],
+    "inauspicious": ["Mercury","Venus"]
+  },
+  "4": {
+    "auspicious": ["Sun","Moon","Mars","Jupiter"],
+    "average": ["Mercury"],
+    "inauspicious": ["Venus","Saturn"]
+  },
+  "5": {
+    "auspicious": ["Sun","Mercury","Venus"],
+    "average": ["Mars","Jupiter","Saturn"],
+    "inauspicious": ["Moon"]
+  },
+  "6": {
+    "auspicious": ["Mercury","Venus","Saturn"],
+    "average": ["Mars","Jupiter"],
+    "inauspicious": ["Sun","Moon"]
+  },
+  "7": {
+    "auspicious": ["Sun","Mercury","Moon"],
+    "average": ["Mars","Jupiter","Venus","Saturn"],
+    "inauspicious": []
+  },
+  "8": {
+    "auspicious": ["Mercury","Venus","Saturn"],
+    "average": ["Jupiter"],
+    "inauspicious": ["Sun","Moon","Mars"]
+  },
+  "9": {
+    "auspicious": ["Sun","Moon","Mars","Jupiter"],
+    "average": ["Venus","Saturn"],
+    "inauspicious": ["Mercury"]
+  }
+}

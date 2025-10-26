@@ -1,0 +1,57 @@
+{
+  "1": {
+    "planet": "Sun",
+    "mind": ["Leader", "Pioneer", "Individualist"],
+    "material": "Gets by position he has.",
+    "total": "It rules Brain related work. Combination of Adaptability, Independence, Writing, Teaching. Good thinking capability and intelligence."
+  },
+  "2": {
+    "planet": "Moon",
+    "mind": ["Nurturer", "Peacemaker", "Communicator"],
+    "material": "Gets by taking care of others.",
+    "total": "Quick learner and finishes work given on-time. It gives natural power to treat everyone accordingly and does justice to work and business."
+  },
+  "3": {
+    "planet": "Jupiter",
+    "mind": ["Diplomatic", "Responsible", "Expressive"],
+    "material": "Gets by teaching, preaching, administrator.",
+    "total": "Will be in good terms with people. It gives peace, harmony and are very sensitive, leads to argument."
+  },
+  "4": {
+    "planet": "Rahu",
+    "mind": ["Builder", "Organizer", "Practical"],
+    "material": "Gets by manipulation.",
+    "total": "This number gives quality of result. You will express more resistance and fighting capacity than those around you. Should anyone attempt to take unfair advantage of you. There will be surprises at your resistance you will put up for the protection of your own interest."
+  },
+  "5": {
+    "planet": "Mercury",
+    "mind": ["Adventurer", "Change Maker", "Independent"],
+    "material": "Gets by calculative type.",
+    "total": "It gives broad and tolerant view. This will strengthen your spirit. Interested in spiritual matters. Likes travelling."
+  },
+  "6": {
+    "planet": "Venus",
+    "mind": ["Creative", "Care Taker", "Harmonizer"],
+    "material": "Gets by entertainment, restaurant, fashion.",
+    "total": "This number is ruled by planet Venus which indicates love, affection and beauty. You give importance to relationship like marriage, friendship. Your happiness and unhappiness is depended on your partner."
+  },
+  "7": {
+    "planet": "Ketu",
+    "mind": ["Thinker", "Analyzer", "Knowledge"],
+    "material": "Gets by spirituality and knowledge.",
+    "total": "You are straight forward person. You like to be independent."
+  },
+  "8": {
+    "planet": "Saturn",
+    "mind": ["Worker", "Achiever", "Patience"],
+    "material": "Gets by service.",
+    "total": "Interested in acquiring more money. Other’s won’t accept as you are, hence this makes you depressed and unhappy."
+  },
+  "9": {
+    "planet": "Mars",
+    "mind": ["Humanitarian", "Visionary", "Philanthropy"],
+    "material": "Gets by giving protection and security.",
+    "total": "You live an advanced life and will not interfere with other’s activity. You don’t like advice."
+  }
+}
+

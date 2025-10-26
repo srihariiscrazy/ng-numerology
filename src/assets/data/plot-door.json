@@ -1,0 +1,25 @@
+{
+  "plots": { 
+    "1": [ "Good for Construction.", "Shallow dip in the Middle.", "Construction will be completed on time.", "No financial issues while construction.", "House construction in this plot will have good ventilation and will be very spacious." ],
+    "2": [ "Good for Construction.", "Plot will be purchased suddenly without any planning.", "Construction will be done very fast.", "There will be no break or obstacles while Construction.", "This plot owner will be in a rented or Leased house. He won't stay in this place.", "Construction will be started with the basic amount. Once the construction is started, finance will be arranged.", "Construction will be completed within 4 to 7 Months." ],
+    "3": [ "Odd shape Plot (South East will be lengthy).", "Lots of obstacles while construction.", "Money will be spent more than estimation for Construction.", "Constructor or Builder will delay the Construction at least for 3 to 8 Months." ],
+    "4": [ "Good for Construction.", "Construction will be done very slowly.", "There will be no unnecessary expenditure for construction.", "Complete space will be utilized for Construction.", "Construction will be completed within 6 to 9 Months." ],
+    "5": [ "Good for Construction.", "Construction will be done on 3 floors or 3 partitions.", "Average expense for Construction.", "Construction will be completed within 5 to 8 Months.", "House will be well designed." ],
+    "6": [ "Not a good plot for Construction.", "While purchase of Plot, there will be shortage of Finance.", "Will get Loan very easily.", "House design will be perfect and beautiful.", "More internal changes will be done during Construction time.", "Builder may be changed during Construction.", "After Construction or during Construction there will be more financial issues at least for 2 yrs." ],
+    "7": [ "Problematic plot.", "Owner of the plot will face problems", "Construction will take more time after purchase of the plot.", "Once construction is started, more obstacles.", "Construction will be done out of shape or plan with low ventilation.", "There will be more Hospital expenses." ],
+    "8": [ "Good plot for Construction.", "Construction will be done in Ariel Shape “L”.", "Females will face Health issues.", "Plot owners will face financial issues during Construction time.", "After completing the Construction, the owner of the plot will face financial issues for at least 3 yrs." ],
+    "9": [ "Good plot for Construction.", "Lots of tension and obstacles while purchasing the plot.", "Once a plot is purchased, the owner of the Plot will not sell that plot. Even if he wants to dispose, it is impossible.", "After Construction is completed in that house a lot of spiritual and good events will be held.", "Construction will be completed in 5 to 6 Months." ] 
+  },
+  "doors":{ 
+    "1": [ "Good looking House.", "Those who live in this house are Educated, Traditional and Disciplined.", "Eyesight problem.", "More spiritual ceremonies will be done.", "Owner of that house will grow to a good Position." ],
+    "2": [ "Good looking House.", "Those who live in this house are fast in all work.", "Little moody and fickle-minded.", "Talkative.", "There will be some disturbance within Family members but they stay together.", "The house will not be neat or planned.", "Good hospitality.", "Like to travel a lot." ],
+    "3": [ "Problematic.", "South side of the house will be vacant.", "Always disturbed.", "Stubborn in nature.", "Financial status will be good and land too.", "Good post or designation in job.", "Females will face difficulties.", "Minor health issues frequently." ],
+    "4": [ "Rectangle shape with moderate Ventilation.", "Business minded.", "They won't believe others easily.", "Freely talking but not helping nature.", "Rich and self-sufficient.", "Females will have more freedom." ],
+    "5": [ "Good House.", "House will have 3 floors or portions.", "Diplomatic and good at hospitality.", "Working class in Financial Institute or Educational Institute.", "Sickness free.", "More Development in life." ],
+    "6": [ "Very good looking and posh house.", "Good looking People.", "Very Sweet and soft speaking Person.", "Stingy.", "Enjoys Luxury life.", "Spends more for themselves but they won’t help others.", "Disease and Tension free." ],
+    "7": [ "House will have low Ventilation.", "It will not be well planned or arranged.", "Long life and respected person for Society.", "Less decorated house.", "Financially stable.", "Good Hospitality to others.", "Hard working." ],
+    "8": [ "House will be in Ariel Shape “L”.", "More Obstacles.", "Hardworking, Helping and Respectful people.", "Helping nature.", "Hardworking.", "Will see growth very late in their Life.", "Female will head the house and guide others.", "Children will be good mannered, disciplined and educated." ],
+    "9": [ "Tension.", "Dominating and quarreling nature.", "Helpful nature.", "Good advisor for others.", "Very spiritual." 
+    ]
+   }
+}

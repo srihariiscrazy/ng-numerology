@@ -1,0 +1,145 @@
+{
+  "doshas":{
+    "Vata": "Back, Legs, Thighs, Bones and large intestines are controlled by Vata.",
+    "Pitta": "Blood, Sweating, Lymphatic system, Metabolism and Small intestines are controlled by Pitta.",
+    "Kapha": "Chest, Head, Neck, Joints, Upper parts of intestine and Fat are controlled by Kapha."
+  },
+  "healthMap": {
+    "1": {
+      "dates": [1, 10, 19, 28],
+      "basicNumber": 1,
+      "planet": "Sun",
+      "healthGunas": "Satva",
+      "humour": "Bile",
+      "dosha": "Pitta",
+      "diseases": "Health issues depend on the level of the pitta in the body and may cause heart disease, headache, dental, eye related and urinary disorders.",
+      "remedy": [
+        "Salt consumption should be less.",
+        "More physical activity.",
+        "Use Mukta Pishti medicine.",
+        "Early dinner is better."
+      ]
+    },
+    "2": {
+      "dates": [2, 11, 20, 29],
+      "basicNumber": 2,
+      "planet": "Moon",
+      "healthGunas": "Tamas",
+      "humour": "Cough",
+      "dosha": "Kapha",
+      "diseases": "Suffer from stomach disorders, gastric and gastro infections, intestinal tumor, mental debility and lung related problems.",
+      "remedy": [
+        "Use more cucumber with food.",
+        "Eat watermelon, cabbage, banana and mustard seeds.",
+        "At night keep a water bottle next to bed and next morning pour that water to a plant.",
+        "Avoid milk consumption at night.",
+        "Consume pepper and honey in the morning.",
+        "Avoid coffee and tobacco.",
+        "Drink buttermilk and lemon juice."
+      ]
+    },
+    "3": {
+      "dates": [3, 12, 21, 30],
+      "basicNumber": 3,
+      "planet": "Jupiter",
+      "healthGunas": "Rajas",
+      "humour": "Cough",
+      "dosha": "Kapha",
+      "diseases": "Nervous problems, back pain, leg pain, sciatica, skin disease, gastric issues, bone pains, throat diseases and paralysis.",
+      "remedy": [
+        "Eat apple, cherry, pomegranate, grapes, figs and almonds.",
+        "Take special care of health in the months of February, June, September and December.",
+        "Take carrot juice and gulkand."
+      ]
+    },
+    "4": {
+      "dates": [4, 13, 22, 31],
+      "basicNumber": 4,
+      "planet": "Rahu",
+      "healthGunas": "Rajas",
+      "humour": "Wind",
+      "dosha": "Vata",
+      "diseases": "Respiratory system related issues, heart diseases, blood pressure, leg injury, insomnia, headache, backache and eye diseases.",
+      "remedy": [
+        "Use palak (spinach).",
+        "Take special care in the months of January, February, July, August and September.",
+        "Drink fruit juice but avoid fruits at daytime; take after sunset.",
+        "Use more green vegetables and sprouts."
+      ]
+    },
+    "5": {
+      "dates": [5, 14, 23],
+      "basicNumber": 5,
+      "planet": "Mercury",
+      "healthGunas": "Rajas",
+      "humour": "Wind",
+      "dosha": "Vata",
+      "diseases": "Indigestion, mental tension, headache, cough, cold, eyesight issues, arm and shoulder pain and paralysis.",
+      "remedy": [
+        "Use more carrots.",
+        "Take special care in the months of June, September and December.",
+        "Worship Lord Ganesha."
+      ]
+    },
+    "6": {
+      "dates": [6, 15, 24],
+      "basicNumber": 6,
+      "planet": "Venus",
+      "healthGunas": "Tamas",
+      "humour": "Cough",
+      "dosha": "Kapha",
+      "diseases": "Throat, kidney, chest and urinary issues, heart disease, diseases related to private parts, diabetes, stones and lung problems.",
+      "remedy": [
+        "Wear a silk sacred thread.",
+        "Take care of your health in the months of May, October and November.",
+        "Consume protein rich food such as sprouts.",
+        "Avoid curd and sweets."
+      ]
+    },
+    "7": {
+      "dates": [7, 16, 25],
+      "basicNumber": 7,
+      "planet": "Ketu",
+      "healthGunas": "Tamas",
+      "humour": "Cough",
+      "dosha": "Kapha",
+      "diseases": "Indigestion, stomach problems, dark circles under eyes, headache, blood disorders, skin problems and lung related issues.",
+      "remedy": [
+        "Drink plenty of apple or other fruit juices.",
+        "Take care of health in the months of January, February, July and August.",
+        "Eat food on time.",
+        "Use vitamins D and E.",
+        "Regular walk."
+      ]
+    },
+    "8": {
+      "dates": [8, 17, 26],
+      "basicNumber": 8,
+      "planet": "Saturn",
+      "healthGunas": "Rajas",
+      "humour": "Wind",
+      "dosha": "Vata",
+      "diseases": "Liver problems, vata related health issues, blood related problems, urinary system disorders, depression and weakness.",
+      "remedy": [
+        "Eat palak, banana, cucumber, green vegetables and fruits.",
+        "Take care of health in the months of January, February, July, September and December.",
+        "Wear a black sacred thread.",
+        "Use vitamins A, D and E, calcium and iron."
+      ]
+    },
+    "9": {
+      "dates": [9, 18, 27],
+      "basicNumber": 9,
+      "planet": "Mars",
+      "healthGunas": "Satva",
+      "humour": "Bile",
+      "dosha": "Pitta",
+      "diseases": "Digestive system problems, burning sensations, urinary problems, fever, headache, dental issues, piles, blood disorders and skin disease.",
+      "remedy": [
+        "Wear a red sacred thread.",
+        "Morning walk.",
+        "Drink fruit juice during daytime."
+      ]
+    }
+  }
+}

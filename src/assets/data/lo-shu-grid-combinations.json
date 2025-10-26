@@ -1,0 +1,20 @@
+{
+  "combinations":[    
+    {
+      "pair": [1, 3],
+      "description": "Enjoys life individually and is a perfectionist. May not be honest, lie to protect themselves, or become violent."
+    },
+    {
+      "pair": [3, 9],
+      "description": "Tends to argue more and may face litigation problems."
+    },
+    {
+      "pair": [7, 9],
+      "description": "Faces difficulties but handles them with calm and confidence."
+    },
+    {
+      "pair": [1, 7],
+      "description": "Interested in mysterious things and enjoys research and searching for hidden things."
+    }
+  ]
+}
