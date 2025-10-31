@@ -71,6 +71,7 @@ export class NumerologyFormComponent implements OnInit {
   firstLetterKey: string | null = null;
   firstLetterDesc: string | null = null;
   loShuResults:any;
+  mindMaterialTotal: any;
 
   constructor(private calc: NumerologyCalculatorService, private pdf: PdfService) {}
 
@@ -332,9 +333,11 @@ export class NumerologyFormComponent implements OnInit {
     try {
       this.mindEntry = (this.mindMaterialMap && mm && mm.mind) ? (this.mindMaterialMap['' + mm.mind] || null) : null;
       this.materialEntry = (this.mindMaterialMap && mm && mm.material) ? (this.mindMaterialMap['' + mm.material] || null) : null;
+      this.mindMaterialTotal = (mm && mm.total) ? (this.mindMaterialMap['' + mm.total] || null) : null;
     } catch (e) {
       this.mindEntry = null;
       this.materialEntry = null;
+      this.mindMaterialTotal = null;
     }
 
     // plots: build complete trace for each plot string

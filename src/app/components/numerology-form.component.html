@@ -208,12 +208,14 @@
           <ul class="list-disc pl-6">
             <li *ngFor="let q of mindEntry.mind">{{ q }}</li>
           </ul>
-          <p class="mt-1"><strong>Total:</strong> {{ mindEntry.total }}</p>
         </div>
 
         <div *ngIf="materialEntry" class="mt-3">
           <p><strong>Material Number:</strong> {{ result.mm.material }} <small class="text-sm">(Planet: {{ materialEntry.planet }})</small></p>
           <p><strong>Material Description:</strong> {{ materialEntry.material }}</p>
+        </div>
+
+        <div *ngIf="mindMaterialTotal" class="mt-3">
           <p class="mt-1"><strong>Total:</strong> {{ materialEntry.total }}</p>
         </div>
       </div>
