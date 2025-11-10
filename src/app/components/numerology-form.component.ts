@@ -27,10 +27,10 @@ import * as firstLetterSignificance from '../../assets/data/first-letter-signifi
   styles: [``]
 })
 export class NumerologyFormComponent implements OnInit {
-  name = 'Srihari K';
-  dob = '1991-08-13';
-  plots = '43,74';
-  door = '63';
+  name = '';
+  dob = '';
+  plots = '';
+  door = '';
   result: any;
   numberVibration: any;
   weekdayText = '';
@@ -48,6 +48,12 @@ export class NumerologyFormComponent implements OnInit {
   raashiElementKey: string | null = null;
   raashiElementDetails: any = null;
   stabilityAges: any;
+  mindMaterialResult: {
+    mind: number;
+    material: number;
+    total: number;
+    analysis: string;
+  } | null = null;
   stabilityAgeForBirth: number[] | null = null;
 
   // added fields to hold calculation steps (string steps for full trace)
@@ -242,6 +248,22 @@ export class NumerologyFormComponent implements OnInit {
 
     // Check Lo Shu Grid combinations
     this.loShuResults = this.calc.checkLoShuCombinations(dateObj, this.loShuData.combinations );
+    
+    // Calculate Mind Material Result
+    const mindMaterial = this.calc.getMindMaterial(this.name);
+    if (mindMaterial) {
+      const mind = mindMaterial.mind || 0;
+      const material = mindMaterial.material || 0;
+      const total = mind + material;
+      const analysis = this.mindMaterialMap[total]?.description || 'No analysis available';
+      
+      this.mindMaterialResult = {
+        mind,
+        material,
+        total,
+        analysis
+      };
+    }
       
   // compute raashi element from dob
   const elem = this.getElementForDate(dateObj);
